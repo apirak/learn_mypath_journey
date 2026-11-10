@@ -1,0 +1,16 @@
+/* All SDK styles, bundled into dist/style.css. Every selector is scoped under
+   .mypath-root with mp- classes so nothing leaks into the host.
+   Import order is cascade order. It mostly follows the old single file; a few
+   blocks moved (mobile header/course rules earlier, scenery later) where no
+   same-specificity rule targets the same element. Some rules still tie on
+   specificity, so reordering imports can change visuals. */
+@import './ui/base.css';
+@import './ui/header/PathHeader.css';
+@import './ui/month/MonthView.css';
+@import './ui/course/CourseProgress.css';
+@import './ui/components/PlanEmptyState.css';
+@import './ui/components/HeaderButton.css';
+@import './ui/all/AllView.css';
+@import './ui/design/scenery.css';
+@import './ui/course/CourseDetail.css';
+@import './ui/calendar/StudyCalendar.css';

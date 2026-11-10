@@ -13,6 +13,6 @@ Prototype นี้เป็นแอป Vite + React + TS + Tailwind แยก�
 
 ## Consequences
 
-- ต้องมี `../learn_mypath` อยู่ข้างกัน และ `pnpm install` ที่นั่นแล้ว
+- source ของ SDK คัดลอกไว้ที่ `vendor/mypath/src` (เดิม alias ไป `../learn_mypath` ตรงๆ เปลี่ยนเพื่อให้ build บน GitHub Pages ได้โดยไม่ต้อง checkout repo private) อัปเดตด้วย `pnpm sync` ซึ่งยังต้องมี `../learn_mypath` อยู่ข้างกัน
 - ไม่มี algorithm จัดตารางจริง: การวิเคราะห์ = รวมวิชาสอบจาก browse.json + กรองคอร์สตัวอย่าง + การแบ่งเวลาเรียน (ดู GLOSSARY)
 - วันนี้ของ demo ตรึงไว้ที่ 2026-11-10 วันสอบและ Mock เป็นวันที่เดาจาก learn_mypath SAMPLE_DATA

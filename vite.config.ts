@@ -5,15 +5,15 @@ import { fileURLToPath } from 'node:url'
 
 const abs = (path: string) => fileURLToPath(new URL(path, import.meta.url))
 
-// <MyPath> comes from the sibling repo's source (ADR-0001). dedupe keeps one
-// React: the SDK files would otherwise pick up learn_mypath/node_modules/react.
+// <MyPath> comes from a vendored copy of the SDK source (ADR-0001, `pnpm sync`
+// refreshes it). dedupe keeps one React for the SDK files.
 export default defineConfig(({ command }) => ({
   // GitHub Pages serves the build from /learn_mypath_journey/; dev stays at /.
   base: command === 'build' ? '/learn_mypath_journey/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
-    alias: [{ find: /^@learn\/mypath$/, replacement: abs('../learn_mypath/packages/mypath/src/index.ts') }],
+    alias: [{ find: /^@learn\/mypath$/, replacement: abs('./vendor/mypath/src/index.ts') }],
     dedupe: ['react', 'react-dom'],
   },
-  server: { port: 5180, fs: { allow: ['..'] } },
+  server: { port: 5180 },
 }))

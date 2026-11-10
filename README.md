@@ -8,17 +8,19 @@ Prototype ของ journey น้องและพี่ ก่อนทำห
 
 ## รัน
 
-ต้องมี `../learn_tcas` และ `../learn_mypath` (ติดตั้ง dependency แล้ว) อยู่ข้างกัน
+รันได้เลยหลัง `pnpm install` — source ของ `<MyPath>` คัดลอกไว้ใน `vendor/mypath/` แล้ว
+
+`pnpm sync` ต้องมี `../learn_tcas` และ `../learn_mypath` อยู่ข้างกัน
 
 ```bash
 pnpm install
-pnpm sync   # คัดลอก browse.json, fixtures และรูปปกคอร์สจาก repo ข้างๆ
+pnpm sync   # (ไม่บังคับ) คัดลอก browse.json, fixtures, รูปปกคอร์ส และ source MyPath SDK จาก repo ข้างๆ
 pnpm dev    # http://localhost:5180
 ```
 
 ## Deploy
 
-GitHub Pages: https://apirak.com/learn_mypath_journey/ — push `main` แล้ว workflow `.github/workflows/pages.yml` build และ deploy ให้ (checkout `apirak/MyPath` คู่กัน ต้องมี secret `MYPATH_REPO_TOKEN` = fine-grained token อ่าน Contents ของ repo นั้นได้)
+GitHub Pages: https://apirak.com/learn_mypath_journey/ — push `main` แล้ว workflow `.github/workflows/pages.yml` build และ deploy ให้
 
 ## Demo
 
