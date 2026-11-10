@@ -20,7 +20,7 @@ pnpm dev    # http://localhost:5180
 
 ## Deploy
 
-GitHub Pages: https://apirak.com/learn_mypath_journey/ — push `main` แล้ว workflow `.github/workflows/pages.yml` build และ deploy ให้
+GitHub Pages: https://learn-mypath-journey.apirak.com/ — push `main` แล้ว workflow `.github/workflows/pages.yml` build และ deploy ให้
 
 ## Demo
 
