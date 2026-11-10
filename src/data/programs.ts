@@ -28,7 +28,7 @@ let DATA: ProgramsData
 let BY_ID = new Map<string, Program>()
 
 export async function loadPrograms() {
-  const res = await fetch('/data/programs.json')
+  const res = await fetch(`${import.meta.env.BASE_URL}data/programs.json`)
   DATA = await res.json()
   BY_ID = new Map(DATA.programs.map(p => [p.id, p]))
 }

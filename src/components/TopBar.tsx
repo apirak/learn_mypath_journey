@@ -6,7 +6,7 @@ import { TUTOR, useStore } from '../store'
 export function Logo({ to = '/' }: { to?: string }) {
   return (
     <Link to={to} className="flex items-center gap-2 text-white">
-      <img src="/images/mypath_logo_header.png" alt="" aria-hidden="true" className="h-6 w-auto" />
+      <img src={`${import.meta.env.BASE_URL}images/mypath_logo_header.png`} alt="" aria-hidden="true" className="h-6 w-auto" />
       <span className="text-[24px] font-semibold tracking-tight">MyPath</span>
     </Link>
   )

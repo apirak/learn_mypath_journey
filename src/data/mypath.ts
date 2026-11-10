@@ -14,7 +14,14 @@ import prices from './mypath/prices.json'
 import progress from './mypath/progress.json'
 
 export const TODAY = '2026-11-10'
-export const catalog: SubjectGroup[] = catalogJson
+// Fixture covers are root paths ("/cover/x.png"); prefix the deploy base.
+export const catalog: SubjectGroup[] = catalogJson.map(g => ({
+  ...g,
+  subjects: g.subjects.map(s => ({
+    ...s,
+    courses: s.courses.map(c => ('cover' in c && c.cover ? { ...c, cover: import.meta.env.BASE_URL + c.cover.slice(1) } : c)),
+  })),
+}))
 export const EVENTS = events as ExamEvent[]
 export const SAMPLE_PLAN: StudentPlan = plan
 export const SAMPLE_OWNED: string[] = owned

@@ -16,6 +16,10 @@ pnpm sync   # คัดลอก browse.json, fixtures และรูปปก�
 pnpm dev    # http://localhost:5180
 ```
 
+## Deploy
+
+GitHub Pages: https://apirak.com/learn_mypath_journey/ — push `main` แล้ว workflow `.github/workflows/pages.yml` build และ deploy ให้ (checkout `apirak/MyPath` คู่กัน ต้องมี secret `MYPATH_REPO_TOKEN` = fine-grained token อ่าน Contents ของ repo นั้นได้)
+
 ## Demo
 
 เลือกบัญชีตัวอย่างหลังกดปุ่ม login · ปุ่ม "รีเซ็ตเดโม" มุมซ้ายล่างล้างข้อมูลทุกบัญชี · โค้ด MyPath: `ENG70` `SCI70` `TGAT70`
