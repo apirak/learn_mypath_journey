@@ -9,7 +9,6 @@ import TutorStudent from './pages/TutorStudent'
 import TutorEdit from './pages/TutorEdit'
 import DemoBar from './components/DemoBar'
 import { Toaster } from './components/toast'
-import HeaderTuner from './components/HeaderTuner'
 
 // Where a signed-in account lands (docs/journey.md, Login).
 export function homeFor(store: ReturnType<typeof useStore>) {
@@ -44,7 +43,6 @@ export default function App() {
       </Routes>
       <DemoBar />
       <Toaster />
-      {import.meta.env.DEV && <HeaderTuner />}
     </>
   )
 }

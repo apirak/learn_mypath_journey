@@ -5,7 +5,7 @@ import { TUTOR, useStore } from '../store'
 
 export function Logo({ to = '/' }: { to?: string }) {
   return (
-    <Link to={to} data-hdr-logo className="flex items-center gap-2 text-white">
+    <Link to={to} className="flex items-center gap-2 text-white">
       <img src="/images/mypath_logo_header.png" alt="" aria-hidden="true" className="h-6 w-auto" />
       <span className="text-[24px] font-semibold tracking-tight">MyPath</span>
     </Link>
@@ -22,18 +22,17 @@ export default function TopBar({ right, menu = true, nav }: { right?: ReactNode;
     ? { name: TUTOR.name, sub: 'พี่' }
     : { name: store.me?.nickname ? `น้อง${store.me.nickname}` : 'น้องใหม่', sub: store.me?.grade ?? '' }
   return (
-    <header data-hdr className="flex h-12 flex-none items-center bg-bar">
+    <header className="flex h-12 flex-none items-center bg-bar">
       <div className="mx-auto flex w-full max-w-[1240px] items-center gap-8 px-8">
         <Logo />
         <nav className="flex items-center gap-1">{nav}</nav>
-        <div data-hdr-actions className="ml-auto flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-3">
           {right}
           {menu && store.session && (
             <div className="relative">
               <button
                 type="button"
                 aria-label="เมนูบัญชี"
-                data-hdr-avatar
                 onClick={() => setOpen(o => !o)}
                 className="grid size-8 place-items-center rounded-full bg-white/15 text-xs font-semibold text-white hover:bg-white/25"
               >

@@ -22,7 +22,7 @@ export default function Login() {
 
   return (
     <div className="flex min-h-full flex-col">
-      <header data-hdr className="flex h-12 items-center bg-bar px-8">
+      <header className="flex h-12 items-center bg-bar px-8">
         <div className="mx-auto w-full max-w-[1240px]"><Logo to="/login" /></div>
       </header>
       <main className="grid flex-1 place-items-center px-6 py-16">
