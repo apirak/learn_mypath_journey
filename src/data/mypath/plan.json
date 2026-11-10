@@ -1,0 +1,142 @@
+{
+  "calendar": {
+    "weekdayHours": 1,
+    "weekendHours": 3,
+    "specialDays": [
+      {
+        "date": "2026-12-12",
+        "hours": 5
+      }
+    ],
+    "breaks": [
+      {
+        "id": 1,
+        "start": "2026-12-21",
+        "end": "2027-01-03",
+        "hours": 2
+      }
+    ],
+    "subjects": ["tpat3", "tgat", "a_lv_61", "a_lv_64", "a_lv_65"]
+  },
+  "courses": [
+    {
+      "courseId": "TPAT3.1",
+      "startDate": "2026-10-01"
+    },
+    {
+      "courseId": "TPAT3.2",
+      "startDate": "2027-12-01"
+    },
+    {
+      "courseId": "MATH.1",
+      "startDate": "2026-10-01",
+      "weeklyHours": 3
+    },
+    {
+      "courseId": "MATH.2",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "MATH.3",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "MATH.4",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "MATH.5",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "MATH.EX"
+    },
+    {
+      "courseId": "MATH.UP",
+      "startDate": "2027-12-01"
+    },
+    {
+      "courseId": "PHY.0",
+      "startDate": "2026-11-10",
+      "weeklyHours": 3
+    },
+    {
+      "courseId": "PHY.1",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.2",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.3",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.4",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.5",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.6",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.7",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "PHY.EX",
+      "startDate": "2027-12-01",
+      "weeklyHours": 3
+    },
+    {
+      "courseId": "TGAT.1",
+      "startDate": "2026-08-01",
+      "weeklyHours": 3
+    },
+    {
+      "courseId": "CHEM.1",
+      "startDate": "2026-12-01",
+      "weeklyHours": 2
+    },
+    {
+      "courseId": "CHEM.2",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "CHEM.3",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "CHEM.4",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "CHEM.5",
+      "followPrevious": true,
+      "followPreviousWeeklyHours": true
+    },
+    {
+      "courseId": "CHEM.EX",
+      "startDate": "2027-12-01"
+    }
+  ]
+}

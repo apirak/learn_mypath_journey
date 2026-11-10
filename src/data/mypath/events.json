@@ -1,0 +1,74 @@
+[
+  {
+    "id": "M1",
+    "date": "2026-12-20",
+    "label": "Mock ลองสนาม",
+    "kind": "mock"
+  },
+  {
+    "id": "M2",
+    "date": "2027-08-16",
+    "label": "Mock TGAT/TPAT",
+    "kind": "mock"
+  },
+  {
+    "id": "M3",
+    "date": "2027-08-30",
+    "label": "Mock A-Level",
+    "kind": "mock"
+  },
+  {
+    "id": "M3b",
+    "date": "2027-08-30",
+    "label": "Mock A-Level เคมี",
+    "kind": "mock"
+  },
+  {
+    "id": "M4",
+    "date": "2027-09-13",
+    "label": "Mock CBT",
+    "kind": "mock"
+  },
+  {
+    "id": "M5",
+    "date": "2027-12-18",
+    "label": "Mock 2 TGAT/TPAT",
+    "kind": "mock"
+  },
+  {
+    "id": "X1",
+    "date": "2028-01-16",
+    "label": "สอบ TGAT/TPAT",
+    "kind": "exam"
+  },
+  {
+    "id": "M6",
+    "date": "2028-01-23",
+    "label": "Mock 2 A-Level",
+    "kind": "mock"
+  },
+  {
+    "id": "X2a",
+    "date": "2028-02-06",
+    "label": "สอบ A-Level คณิต 1",
+    "kind": "exam"
+  },
+  {
+    "id": "X2b",
+    "date": "2028-02-06",
+    "label": "สอบ A-Level ฟิสิกส์",
+    "kind": "exam"
+  },
+  {
+    "id": "X2c",
+    "date": "2028-02-06",
+    "label": "สอบ A-Level เคมี",
+    "kind": "exam"
+  },
+  {
+    "id": "X2d",
+    "date": "2028-02-06",
+    "label": "สอบ A-Level ชีวะ",
+    "kind": "exam"
+  }
+]

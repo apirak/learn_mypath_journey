@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+/* MyPath theme (ADR-0001): dark header, white cards on #f7f9fc, primary blue. */
+@theme {
+  --font-sans: 'IBM Plex Sans Thai Looped', system-ui, sans-serif;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-line: #dee2e6;
+  --color-canvas: #f7f9fc;
+  --color-bar: #343a40;
+  --color-primary: #0a6cf5;
+  --color-primary-dark: #0858c9;
+  --color-primary-soft: #e8f1fe;
+  --color-warn: #d9480f;
+  --color-warn-soft: #fff4e6;
+  --color-danger: #c92a2a;
+  --color-ok: #2b8a3e;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@utility btn {
+  @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-5 text-[15px] font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+}
+@utility btn-primary {
+  @apply btn bg-primary text-white hover:bg-primary-dark;
+}
+@utility btn-secondary {
+  @apply btn bg-[#e9ecef] text-ink hover:bg-[#dde1e5];
+}
+@utility btn-outline {
+  @apply btn border border-primary bg-white text-primary hover:bg-primary-soft;
+}
+@utility btn-ghost {
+  @apply btn h-9 px-3 text-muted hover:bg-black/5 hover:text-ink;
+}
+@utility card {
+  @apply rounded-2xl bg-white shadow-[0_1px_2px_rgba(16,24,40,0.06)];
+}
+@utility chip {
+  @apply inline-flex h-6 items-center gap-1 rounded-full px-2.5 text-xs font-medium whitespace-nowrap;
+}
+@utility input {
+  @apply h-11 w-full rounded-lg border border-line bg-white px-3 text-[15px] outline-none focus:border-primary focus:ring-2 focus:ring-primary/20;
+}
+
+/* <MyPath> needs a fixed-height box; .mypath-root fills it. */
+.mypath-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.mypath-box > * {
+  flex: 1;
+  min-height: 0;
+}
